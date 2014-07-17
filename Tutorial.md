@@ -20,4 +20,4 @@ Satellite communication is accomplished through the use of the [SatUplink](https
 Finally, the controller for the whole system is an [Arduino Uno R3](https://www.sparkfun.com/products/11021).
 ##Construction
 ###Spectrum Shield Modification
-The Spectrum Shield uses the same two pins on the Arduino to control its MSGEQ-7 chip as the power control for the SatUplink Shield. To get around this, the traces for pins 4 and 5 are cut on the 
+The Spectrum Shield uses the same two pins on the Arduino to control its MSGEQ-7 chip as the power control for the SatUplink Shield. To get around this, the traces for pins 4 and 5 are cut on the Spectrum Shield, and 30-gauge wire is used to connect these to pins 6 and 7, respectively. [image]()
