@@ -1,6 +1,6 @@
 #SPLOT V2: The Sound Pressure Level Observing Transponder V2
 ##Introduction
-In many situations, it becomes worthwhile to be able to transmit data back from a field location in near-realtime. To that end, satellite-enabled systems are very useful in conveying data back from the field very quickly.
+In many situations, it becomes worthwhile to be able to transmit environmental data back from a field location in near-realtime. To that end, satellite-enabled systems are very useful in conveying data back from the field very quickly. In this case, this will be done with sound data and attendant environmental parameters.
 ###System Overview
 
 The SPLOT is comprised of four subsystems:
@@ -18,3 +18,6 @@ At the core of the power subsystem is the [LiPoly Charger](https://www.sparkfun.
 Satellite communication is accomplished through the use of the [SatUplink](https://www.sparkfun.com/products/retired/11088) shield and a [SPOT Connect](http://www.findmespot.com/en/index.php?cid=116) beacon.
 ####Controller
 Finally, the controller for the whole system is an [Arduino Uno R3](https://www.sparkfun.com/products/11021).
+##Construction
+###Spectrum Shield Modification
+The Spectrum Shield uses the same two pins on the Arduino to control its MSGEQ-7 chip as the power control for the SatUplink Shield. To get around this, the traces for pins 4 and 5 are cut on the 
